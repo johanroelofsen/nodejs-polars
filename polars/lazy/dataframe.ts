@@ -15,7 +15,7 @@ import {Deserialize, GroupByOps, Serialize} from "../shared_traits";
 const inspect = Symbol.for("nodejs.util.inspect.custom");
 
 type LazyJoinOptions = {
-  how?: "left" | "inner" | "outer" | "cross";
+  how?: "left" | "inner" | "outer" | "cross" | "semi" | "anti";
   suffix?: string;
   allowParallel?: boolean;
   forceParallel?: boolean;
